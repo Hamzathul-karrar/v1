@@ -18,7 +18,7 @@ const About = () => (
           ))}
         </ul>
       </div>
-      <div className="relative group max-w-[300px] mx-auto md:mx-0">
+      <div className="hidden md:block relative group max-w-[300px] mx-auto md:mx-0">
         <div className="relative z-10 block w-full aspect-square rounded overflow-hidden">
           <img
             src={`/me.png`}

@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Menu, X } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -100,8 +102,59 @@ const Nav = () => {
             Resume
           </a>
         </motion.div>
-
       </nav>
+
+      {/* Mobile Menu Toggle */}
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="md:hidden text-teal focus:outline-none z-50"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? <X size={28} /> : <Menu size={28} />}
+      </motion.button>
+
+      {/* Mobile Dropdown Menu */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="absolute top-full left-0 w-full bg-light-navy/95 backdrop-blur-md shadow-xl flex flex-col items-center py-8 z-40 md:hidden"
+          >
+            <ol className="flex flex-col items-center space-y-6 list-none w-full">
+              {navLinks.map((link) => (
+                <li key={link.name} className="font-mono text-lg tracking-widest w-full text-center">
+                  <a
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className={cn(
+                      "transition-all duration-300 block w-full py-2",
+                      activeSection === link.href.substring(1)
+                        ? "text-teal"
+                        : "text-lightest-slate hover:text-teal"
+                    )}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ol>
+            <a
+              href="/Hamza_Resume_Java.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="mt-8 px-8 py-4 border border-teal text-teal text-lg font-mono rounded hover:bg-teal-tint transition-all"
+            >
+              Resume
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };

@@ -48,7 +48,7 @@
 
   .section-heading::after {
     content: "";
-    @apply block relative top-[-2px] w-[200px] md:w-[300px] h-[1px] ml-5 bg-lightest-navy;
+    @apply flex-1 max-w-[200px] md:max-w-[300px] relative top-[-2px] h-[1px] ml-5 bg-lightest-navy;
   }
 }
 

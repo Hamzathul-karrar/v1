@@ -9,7 +9,7 @@ const Projects = () => (
       {RESUME_DATA.projects.map((project, i) => (
         <div key={project.title} className={cn(
           "relative grid grid-cols-12 items-center mb-30",
-          i % 2 !== 0 && "text-right"
+          i % 2 !== 0 && "md:text-right"
         )}>
           {/* Project Image */}
           <div className={cn(
@@ -29,7 +29,7 @@ const Projects = () => (
 
           {/* Project Content */}
           <div className={cn(
-            "col-span-12 md:col-span-6 z-20 mt-6 md:mt-0 flex flex-col md:row-start-1",
+            "col-span-12 md:col-span-6 z-20 mt-6 md:mt-0 flex flex-col md:row-start-1 text-left",
             i % 2 !== 0 ? "md:col-start-1 md:items-start md:text-left" : "md:col-start-7 md:items-end md:text-right"
           )}>
             <h3 className="text-2xl md:text-3xl font-bold mb-5 hover:text-teal transition-all">
@@ -40,15 +40,15 @@ const Projects = () => (
             </div>
             <ul className={cn(
               "flex flex-wrap list-none font-mono text-xs text-light-slate mb-4",
-              i % 2 !== 0 ? "justify-start" : "justify-end"
+              i % 2 !== 0 ? "justify-start md:justify-start" : "justify-start md:justify-end"
             )}>
               {project.tech.map((t, index) => (
-                <li key={t} className={cn("mb-2", i % 2 !== 0 ? "mr-4" : "ml-4")}>{t}</li>
+                <li key={t} className={cn("mb-2 mr-4", i % 2 === 0 && "md:mr-0 md:ml-4")}>{t}</li>
               ))}
             </ul>
             <div className={cn(
               "flex items-center",
-              i % 2 !== 0 ? "justify-start" : "justify-end"
+              i % 2 !== 0 ? "justify-start md:justify-start" : "justify-start md:justify-end"
             )}>
               {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:text-teal transition-all mr-4"><Github size={20} /></a>}
               {project.live && <a href={project.live} target="_blank" rel="noopener noreferrer" className="hover:text-teal transition-all"><ExternalLink size={20} /></a>}
