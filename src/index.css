@@ -16,6 +16,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-navy text-slate font-sans selection:bg-lightest-navy selection:text-teal;
     margin: 0;
