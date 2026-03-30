@@ -16,11 +16,9 @@ const Projects = () => (
             "col-span-12 md:col-span-7 relative aspect-[16/10] rounded overflow-hidden group shadow-xl",
             i % 2 !== 0 ? "md:col-start-6" : "md:col-start-1"
           )}>
-            <div className="absolute inset-0 bg-teal/30 group-hover:bg-transparent z-10 transition-all duration-300" />
             <img
-              src={`https://picsum.photos/seed/${project.title}/800/500`}
+              src={`/${project.image}`}
               alt={project.title}
-              className="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500"
               referrerPolicy="no-referrer"
             />
           </div>

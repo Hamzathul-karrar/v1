@@ -51,7 +51,8 @@ export const RESUME_DATA = {
         "Designed MySQL schema and optimized queries for faster retrieval and minimal redundancy."
       ],
       github: "https://github.com/Hamzathul-karrar/JobScout-Frontend",
-      live: "https://jobscout-app.netlify.app/"
+      live: "https://jobscout-app.netlify.app/",
+      image: "jobscout.png"
     },
     {
       title: "Real-Time Sign Language Detection",
@@ -63,7 +64,8 @@ export const RESUME_DATA = {
         "Optimized frame processing pipeline for low latency inference."
       ],
       github: "https://github.com/Hamzathul-karrar/Indian-Sign-Language-ISL-using-Yolov5",
-      live: "https://github.com/Hamzathul-karrar/Indian-Sign-Language-ISL-using-Yolov5"
+      live: "https://github.com/Hamzathul-karrar/Indian-Sign-Language-ISL-using-Yolov5",
+      image: "sign_lang.png"
     },
     {
       title: "Car Service System",
@@ -73,7 +75,8 @@ export const RESUME_DATA = {
         "Delivered CRUD based service booking with clear MVC separation of concerns.",
         "Implemented user management, form validation, and service scheduling modules.",
         "Integrated JDBC for persistent storage and reliable transaction flows."
-      ]
+      ],
+      image: "car.png"
     }
   ],
   education: [

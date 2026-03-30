@@ -21,14 +21,13 @@ const About = () => (
       <div className="relative group max-w-[300px] mx-auto md:mx-0">
         <div className="relative z-10 block w-full aspect-square rounded overflow-hidden">
           <img
-            src={`https://picsum.photos/seed/hamzath/400/400`}
+            src={`/me.png`}
             alt="Profile"
-            className="grayscale hover:grayscale-0 transition-all duration-500 object-cover w-full h-full"
+            className="w-full h-full object-cover object-top"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-teal/30 group-hover:bg-transparent transition-all duration-500" />
         </div>
-        <div className="absolute top-5 left-5 w-full h-full border-2 border-teal rounded -z-10 group-hover:top-4 group-hover:left-4 transition-all duration-300" />
+        <div className="absolute top-5 left-5 w-full aspect-square border-2 border-teal rounded -z-10 group-hover:top-4 group-hover:left-4 transition-all duration-300" />
       </div>
     </div>
   </section>
