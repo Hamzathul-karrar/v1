@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">Hamzathul Karrar's Portfolio</h1>
+  <h1 align="center">Portfolio site</h1>
 
   <p align="center">
     A personal portfolio showcasing my projects, skills, and experience as a Java Backend & Full Stack Developer.
@@ -21,10 +21,10 @@ Welcome to my personal developer portfolio! This project is built using modern w
 
 This project was built with the following technologies:
 
-* [![React][React.js]][React-url]
-* [![Vite][Vite.js]][Vite-url]
-* [![TailwindCSS][TailwindCSS]][Tailwind-url]
-* [![Framer Motion][Framer-Motion]][Framer-Motion-url]
+* React.js
+* Vite
+* TailwindCSS
+* Framer Motion
 
 ## ✨ Features
 
@@ -64,3 +64,5 @@ Make sure you have Node.js and npm installed on your machine.
    npm run dev
    ```
 
+### Credit
+[Brittany Chiang](https://github.com/bchiang7)
