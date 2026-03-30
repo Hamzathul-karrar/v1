@@ -44,12 +44,7 @@ export const RESUME_DATA = {
       title: "JobScout",
       subtitle: "Job Aggregation Web Application",
       tech: ["Java", "Spring Boot", "React", "JWT", "MySQL"],
-      description: [
-        "Built a full stack web platform listing 25+ verified job portals in one place, helping users discover opportunities faster and reduce search effort by 80%.",
-        "Implemented secure authentication using JWT.",
-        "Exposed REST APIs and integrated with React frontend including pagination.",
-        "Designed MySQL schema and optimized queries for faster retrieval and minimal redundancy."
-      ],
+      description: "A full-stack job aggregation platform built with Spring Boot and React that lists 25+ verified job portals and features secure JWT authentication.",
       github: "https://github.com/Hamzathul-karrar/JobScout-Frontend",
       live: "https://jobscout-app.netlify.app/",
       image: "jobscout.png"
@@ -58,11 +53,7 @@ export const RESUME_DATA = {
       title: "Real-Time Sign Language Detection",
       subtitle: "YOLOv5 and NLP",
       tech: ["Python", "OpenCV", "YOLOv5", "NLP"],
-      description: [
-        "Developed gesture recognition that translates sign language to real time text and speech.",
-        "Combined YOLOv5 detection with NLP post processing achieving 80–85% accuracy on custom datasets.",
-        "Optimized frame processing pipeline for low latency inference."
-      ],
+      description: "A Python and YOLOv5 based system that translates gestures into text and speech with an accuracy of 80-85%.",
       github: "https://github.com/Hamzathul-karrar/Indian-Sign-Language-ISL-using-Yolov5",
       live: "https://github.com/Hamzathul-karrar/Indian-Sign-Language-ISL-using-Yolov5",
       image: "sign_lang.png"
@@ -71,11 +62,7 @@ export const RESUME_DATA = {
       title: "Car Service System",
       subtitle: "MVC Web Application",
       tech: ["Java", "Servlet", "JDBC", "HTML", "CSS", "MySQL"],
-      description: [
-        "Delivered CRUD based service booking with clear MVC separation of concerns.",
-        "Implemented user management, form validation, and service scheduling modules.",
-        "Integrated JDBC for persistent storage and reliable transaction flows."
-      ],
+      description: "An MVC web application using Java Servlets and JDBC to manage CRUD-based service bookings, user management, and scheduling.",
       image: "car.png"
     }
   ],
