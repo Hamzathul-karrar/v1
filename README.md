@@ -1,20 +1,66 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <h1 align="center">Hamzathul Karrar's Portfolio</h1>
+
+  <p align="center">
+    A personal portfolio showcasing my projects, skills, and experience as a Java Backend & Full Stack Developer.
+    <br />
+    <a href="https://hamzath.netlify.app"><strong>View Live Demo »</strong></a>
+    <br />
+  </p>
 </div>
 
-# Run and deploy your AI Studio app
+<!-- ABOUT THE PROJECT -->
+## 🌟 About The Project
 
-This contains everything you need to run your app locally.
+Welcome to my personal developer portfolio! This project is built using modern web technologies to serve as a digital resume and a showcase of my technical capabilities. It details my professional experience, education, and projects, emphasizing my skills in Java, Spring Boot, React, and more.
 
-View your app in AI Studio: https://ai.studio/apps/3c3a9394-4383-496c-a73d-a218b8470d39
+### 🚀 Live Link
+**[hamzath.netlify.app](https://hamzath.netlify.app)**
 
-## Run Locally
+## 🛠 Built With
 
-**Prerequisites:**  Node.js
+This project was built with the following technologies:
 
+* [![React][React.js]][React-url]
+* [![Vite][Vite.js]][Vite-url]
+* [![TailwindCSS][TailwindCSS]][Tailwind-url]
+* [![Framer Motion][Framer-Motion]][Framer-Motion-url]
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ✨ Features
+
+- **Responsive Design**: Flawless experience across desktop, tablet, and mobile devices.
+- **Dynamic Content**: Data is modularized (in `src/constants.js`) for easy updates.
+- **Smooth Animations**: Tasteful entry and scroll animations using Framer Motion (or similar libraries).
+- **Project Showcase**: Detailed views of my primary projects like JobScout, Real-Time Sign Language Detection, and more.
+
+## 💻 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Hamzathul-karrar/v1.git
+   ```
+2. Navigate to the project directory
+   ```sh
+   cd v1
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Start the development server
+   ```sh
+   npm run dev
+   ```
+
