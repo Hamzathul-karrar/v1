@@ -7,14 +7,54 @@ export const RESUME_DATA = {
   linkedin: "https://linkedin.com/in/hamzathul-karrar",
   github: "https://github.com/Hamzathul-karrar",
   summary: "Result-oriented Java Backend & Full Stack Developer building scalable web applications with Spring Boot, Hibernate, React, and MySQL. Experienced in designing RESTful web services, implementing authentication with JWT and Spring Security, and applying clean MVC architecture. Comfortable taking projects from concept to deployment with a focus on efficiency, code quality, and maintainability within Agile SDLC.",
-  skills: {
-    languages: ["Java", "JavaScript (ES6)", "Python", "HTML5", "CSS3"],
-    backend: ["Spring Boot", "Spring Security", "Hibernate", "JDBC", "RESTful Web Services", "Microservices", "PHP"],
-    frontend: ["React", "Tailwind CSS"],
-    database: ["MySQL"],
-    tools: ["Git", "GitHub", "Postman", "Maven", "Swagger", "Eclipse", "VS Code"],
-    concepts: ["OOP", "MVC", "JWT Authentication", "Exception Handling", "Multithreading", "Agile/Scrum", "SDLC"]
-  },
+  skills: [
+    {
+      title: "Backend",
+      skills: [
+        { name: "Java", slug: "openjdk" },
+        { name: "Spring Boot", slug: "springboot" },
+        { name: "Spring Security", slug: "springsecurity" },
+        { name: "Hibernate", slug: "hibernate" },
+        { name: "JDBC", slug: "gitconnected" },
+        { name: "RESTful Web Services", slug: "ray" },
+        { name: "Microservices (basic)", slug: "serverfault" }
+      ]
+    },
+    {
+      title: "Frontend",
+      skills: [
+        { name: "React", slug: "react" },
+        { name: "HTML5", slug: "html5" },
+        { name: "CSS3", slug: "css" },
+        { name: "JavaScript", slug: "javascript" }
+      ]
+    },
+    {
+      title: "Database",
+      skills: [
+        { name: "MySQL", slug: "mysql" }
+      ]
+    },
+    {
+      title: "Tools & AI Tools",
+      skills: [
+        { name: "Git", slug: "git" },
+        { name: "GitHub", slug: "github" },
+        { name: "Postman", slug: "postman" },
+        { name: "Maven", slug: "apachemaven" },
+        { name: "Swagger", slug: "swagger" },
+        { name: "Eclipse", slug: "eclipseide" },
+        { name: "VS Code", slug: "vscodium" },
+        { name: "LM Studio", slug: "ollama" },
+        { name: "Cursor", slug: "cursor" },
+        { name: "Claude", slug: "anthropic" },
+        { name: "Google AI Studio", slug: "google" },
+        { name: "Lovable", slug: "undertale" },
+        { name: "Perplexity", slug: "perplexity" },
+        { name: "GenAI (TTS/Image/Video models)", slug: "terraform" }
+      ]
+    }
+  ],
   experience: [
     {
       company: "QuntNex",

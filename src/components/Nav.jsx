@@ -28,7 +28,7 @@ const Nav = () => {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    const sections = ['hero', 'about', 'experience', 'projects', 'contact'];
+    const sections = ['hero', 'about', 'skills', 'experience', 'projects', 'contact'];
     sections.forEach((section) => {
       const element = document.getElementById(section);
       if (element) observer.observe(element);
@@ -42,6 +42,7 @@ const Nav = () => {
 
   const navLinks = [
     { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Work', href: '#projects' },
     { name: 'Contact', href: '#contact' },
