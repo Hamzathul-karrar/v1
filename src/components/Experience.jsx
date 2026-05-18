@@ -7,7 +7,14 @@ const Experience = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section id="experience" className="scroll-mt-20 max-w-[700px]">
+    <motion.section
+      id="experience"
+      className="scroll-mt-20 max-w-[700px]"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <h2 className="section-heading">Where I’ve Worked</h2>
       <div className="flex flex-col md:flex-row min-h-[300px]">
         <div className="flex md:flex-col overflow-x-auto md:overflow-x-visible mb-8 md:mb-0 border-b md:border-b-0 md:border-l border-lightest-navy">
@@ -51,7 +58,7 @@ const Experience = () => {
           </AnimatePresence>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

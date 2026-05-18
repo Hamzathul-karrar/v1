@@ -1,5 +1,14 @@
+import { motion } from 'motion/react';
+
 const About = () => (
-  <section id="about" className="scroll-mt-20">
+  <motion.section
+    id="about"
+    className="scroll-mt-20"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: false, amount: 0.2 }}
+    transition={{ duration: 0.7, ease: "easeOut" }}
+  >
     <h2 className="section-heading" >About Me</h2>
     <div className="grid md:grid-cols-[3fr_2fr] gap-12">
       <div className="space-y-4 text-lg">
@@ -30,7 +39,7 @@ const About = () => (
         <div className="absolute top-5 left-5 w-full aspect-square border-2 border-teal rounded -z-10 group-hover:top-4 group-hover:left-4 transition-all duration-300" />
       </div>
     </div>
-  </section>
+  </motion.section>
 );
 
 export default About;

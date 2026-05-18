@@ -1,7 +1,15 @@
+import { motion } from 'motion/react';
 import { RESUME_DATA } from '../constants';
 
 const Contact = () => (
-  <section id="contact" className="text-center max-w-[600px] py-32 mx-auto">
+  <motion.section
+    id="contact"
+    className="text-center max-w-[600px] py-32 mx-auto"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: false, amount: 0.2 }}
+    transition={{ duration: 0.7, ease: "easeOut" }}
+  >
     <p className="mono mb-5">What’s Next?</p>
     <h2 className="text-4xl md:text-6xl font-bold text-lightest-slate mb-5">Get In Touch</h2>
     <p className="text-lg mb-12">
@@ -13,7 +21,7 @@ const Contact = () => (
     >
       Say Hello
     </a>
-  </section>
+  </motion.section>
 );
 
 export default Contact;

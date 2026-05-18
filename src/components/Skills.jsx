@@ -1,8 +1,16 @@
+import { motion } from 'motion/react';
 import { RESUME_DATA } from '../constants';
 
 const Skills = () => {
   return (
-    <section id="skills" className="scroll-mt-20">
+    <motion.section
+      id="skills"
+      className="scroll-mt-20"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <h2 className="section-heading">My Stack</h2>
       <div className="flex flex-col gap-10 mt-8">
         {RESUME_DATA.skills.map((category, index) => (
@@ -30,7 +38,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

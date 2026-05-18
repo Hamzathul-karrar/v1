@@ -1,9 +1,17 @@
+import { motion } from 'motion/react';
 import { Github, ExternalLink } from 'lucide-react';
 import { RESUME_DATA } from '../constants';
 import { cn } from '../lib/utils';
 
 const Projects = () => (
-  <section id="projects" className="scroll-mt-20">
+  <motion.section
+    id="projects"
+    className="scroll-mt-20"
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: false, amount: 0.1 }}
+    transition={{ duration: 0.7, ease: "easeOut" }}
+  >
     <h2 className="section-heading">Some Things I’ve Built</h2>
     <div className="space-y-24">
       {RESUME_DATA.projects.map((project, i) => (
@@ -57,7 +65,7 @@ const Projects = () => (
         </div>
       ))}
     </div>
-  </section>
+  </motion.section>
 );
 
 export default Projects;
