@@ -8,7 +8,7 @@ const Contact = () => (
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: false, amount: 0.2 }}
-    transition={{ duration: 0.7, ease: "easeOut" }}
+    transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
   >
     <p className="mono mb-5">What’s Next?</p>
     <h2 className="text-4xl md:text-6xl font-bold text-lightest-slate mb-5">Get In Touch</h2>

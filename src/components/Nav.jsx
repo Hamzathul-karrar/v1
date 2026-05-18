@@ -56,7 +56,7 @@ const Nav = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="text-teal"
       >
         <a href="/" className="group relative block w-10 h-10">
@@ -72,7 +72,7 @@ const Nav = () => {
               key={link.name}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
               className="font-mono text-sm tracking-widest"
             >
               <a
@@ -92,7 +92,7 @@ const Nav = () => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
         >
           <a
             href="/Hamza_Resume_Java.pdf"
@@ -109,7 +109,7 @@ const Nav = () => {
       <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="md:hidden text-teal focus:outline-none z-50"
         onClick={() => setMenuOpen(!menuOpen)}
       >

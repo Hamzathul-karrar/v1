@@ -6,7 +6,7 @@ const Hero = () => (
     <motion.p
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.6 }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.6 }}
       className="mono mb-5"
     >
       Hi, my name is
@@ -14,7 +14,7 @@ const Hero = () => (
     <motion.h1
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.7 }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.7 }}
       className="big-heading mb-2"
     >
       {RESUME_DATA.name}.
@@ -22,7 +22,7 @@ const Hero = () => (
     <motion.h2
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.8 }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.8 }}
       className="medium-heading mb-5"
     >
       I build things for the web.
@@ -30,14 +30,14 @@ const Hero = () => (
     <motion.p
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.9 }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.9 }}
       className="max-w-[540px] text-lg leading-relaxed mb-12"
     >
       Software Developer focused on building scalable web apps. I specialize in <span className="text-teal">Java, Spring Boot, and React</span>, taking projects from a rough concept to a polished deployment. Let's build something great.     </motion.p>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 1 }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 1 }}
     >
       <a
         href="#projects"

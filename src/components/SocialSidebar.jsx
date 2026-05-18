@@ -6,7 +6,7 @@ const SocialSidebar = () => (
   <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ delay: 1, duration: 0.5 }}
+    transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 1 }}
     className="flex justify-center items-center space-x-6 py-6"
   >
     <a href={RESUME_DATA.github} target="_blank" rel="noreferrer" className="text-slate hover:text-teal hover:-translate-y-1 transition-all inline-block"><Github size={24} /></a>

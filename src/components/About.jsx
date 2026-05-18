@@ -7,7 +7,7 @@ const About = () => (
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: false, amount: 0.2 }}
-    transition={{ duration: 0.7, ease: "easeOut" }}
+    transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
   >
     <h2 className="section-heading" >About Me</h2>
     <div className="grid md:grid-cols-[3fr_2fr] gap-12">

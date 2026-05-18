@@ -13,7 +13,7 @@ const Experience = () => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.2 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
     >
       <h2 className="section-heading">Where I’ve Worked</h2>
       <div className="flex flex-col md:flex-row min-h-[300px]">
